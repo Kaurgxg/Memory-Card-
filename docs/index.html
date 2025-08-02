@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    body {
+      background-image: url('assets/bg.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.2); /* optional overlay */
+    }
+
+    .topbar {
+      font-size: 4rem;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 3rem;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .bttnbar {
+      margin: 1rem 0;
+    }
+
+    .bttnbar button {
+      font-size: 2rem;
+      width: 13rem;
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color:rgba(217, 217, 217, 0.64);
+      
+      color: black;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s;
+        
+    }
+
+    .bttnbar button:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">Memory Game</div>
+    <div class="bttnbar" onclick="window.location.href='easy.html'"><button>Easy</button></div>
+    <div class="bttnbar" onclick="window.location.href='medium.html'"><button>Medium</button></div>
+    <div class="bttnbar" onclick="window.location.href='hard.html'"><button>Hard</button></div>
+  </div>
+</body>
+</html>
